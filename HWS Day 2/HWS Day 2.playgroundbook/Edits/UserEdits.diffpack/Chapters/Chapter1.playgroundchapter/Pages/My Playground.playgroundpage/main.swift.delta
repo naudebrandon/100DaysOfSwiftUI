@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>let goodDogs = true
+var gameOver = false
+print(gameOver)
+//Switch the current logic
+gameOver.toggle()
+print(gameOver)
+let isMultiple = 120.isMultiple(of: 3)
+
+//Joining Strings
+
+let firstPart = "Hello"
+let secondPart = "World"
+print(firstPart + " " + secondPart)
+
+
+//Interpolation
+let name = "Taylor"
+let age = 26
+let message = "Hello, my name is \(name) and I'm \(age) years old"
+print(message)
+
+print("5 X 5 is \(5 * 5)")
+
+//Checkpoint 1
+print("----------CHECKPOINT 1------------")
+
+let celciusTemperature = 10.8
+
+let fahrenheitTemperature = ((celciusTemperature * 9) / 5) + 32
+
+print("\(celciusTemperature)°C is \(fahrenheitTemperature)°F")
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 644}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{0, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

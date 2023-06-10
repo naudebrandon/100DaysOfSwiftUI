@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//How to Store data in arrays
+print("----------------ARRAYS----------------")
+
+var Beatles = ["John", "Paul", "George", "Ringo"]
+//Add at the end
+Beatles.append("Adrian")
+
+let numbers = [4, 8, 15, 16, 23, 42]
+var temperatures = [25.3, 28.2, 26.5]
+
+print(Beatles[1])
+
+//Create an empty array
+var scores = Array&lt;Int&gt;()
+scores.append(100)
+scores.append(80)
+scores.append(85)
+print(scores[1])
+
+//var albums = Array&lt;String&gt;()
+var albums = [String]()
+albums.append("Folklore")
+albums.append("Red")
+print(albums.count)
+
+var characters = ["Lana", "Ray", "Pam"]
+print(characters.count)
+characters.remove(at: 2)
+print(characters.count)
+
+characters.removeAll()
+print(characters.count)
+
+let bondMovies = ["Casino Royal", "Spectre", "No Time to Die"]
+print(bondMovies.contains("Casino Royal"))
+print(bondMovies.contains("Frozen"))
+
+let city = ["London", "Tokyo", "Rome", "Paris"]
+print(city.sorted())
+let gpts = [12, 4, 18, 9, 10, 6, 3, 5, 3, 10]
+print(gpts.sorted())
+
+print(gpts[0])
+print(gpts.reversed())
+print(gpts.reversed()[0])
+
+//How to store and find data in Dictionaries
+print()
+print("-------------DICTIONARIES-------------")
+
+let employee = [
+    "name" : "Taylor Swift",
+    "job" :"Singer",
+    "location" : "Nashville"    
+]
+print(employee["name", default: "Unknown"])
+print(employee["job", default: "Unknown"])
+
+let hasGraduated = [
+    "Eric" : false,
+    "Maeve" : true,
+    "Otis" : false
+]
+
+let olympics = [
+    2012: "London",
+    2016: "Rio de Janeiro",
+    2021: "Tokyo"
+]
+print(olympics[2012, default: "Unknown"])
+
+var heights = [String: Int]()
+heights["Yao Ming"] = 229
+heights["Shaquille O'Neal"] = 216
+heights["LeBron James"] = 206
+
+//Will overwrite values of duplicate keys
+
+//How to use sets for fast data lookup
+print()
+print("------------------SETS----------------")
+//Order does not matter
+//Cannot append only insert
+//Cannot store duplicates
+//Optimized for fast lookups
+var actors = Set([
+    "Denzel Washington",
+    "Tom Cruise",
+    "Nicolas Cage",
+    "Samuel L Jackson"
+])
+
+print(actors)
+actors.insert("Amanda Clark")
+print(actors)
+
+//How to create and use enumerations
+print()
+print("----------------ENUMS-----------------")
+//Set of named values
+
+enum Weekday {
+    case Monday, Tuesday, Wednesday
+    case Thursday
+    case Friday
+}
+
+var day = Weekday.Monday
+day = Weekday.Wednesday
+day = Weekday.Tuesday
+print(day)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2344}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

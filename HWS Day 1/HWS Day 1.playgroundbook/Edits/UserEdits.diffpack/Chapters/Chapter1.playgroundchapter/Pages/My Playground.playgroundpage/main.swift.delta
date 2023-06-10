@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Variable
+var playerName = "Roy"
+
+//Constant
+//Use constants preferably to avoid future problems
+let character = "Keeley"
+
+print(playerName)
+print(character)
+
+//Strings
+
+//String with quotes
+let quote = "Then he tapped \"Hello\" and walked away"
+
+//Multiline string
+//""" needs to be on their own lines
+let movie = """
+A day in
+the life of an
+Apple engineer
+"""
+
+
+//Length of a string
+print(quote.count)
+
+//Uppercased
+print(movie.uppercased())
+
+//Starts with a spesific prefix
+//Return Boolean value
+print(movie.hasPrefix("A day"))
+
+//Ends with a spesific Suffix
+//Return Boolean Value
+print(quote.hasSuffix("walked away"))
+
+
+//Whole Numbers
+//Integer
+
+let score = 10
+
+//Swift ignores underscore
+let reallyBig = 100_000_000
+
+let lowerScore = score - 2
+let higerScore = score + 2
+let doubleScore = score * score
+let halfScore = score / 2
+
+print(score)
+print(lowerScore)
+print(higerScore)
+print(doubleScore)
+print(halfScore)
+
+var counter = 12
+//Compound assignment operators
+counter += 5
+print(counter)
+
+let number = 120
+print(number.isMultiple(of: 3))
+print(120.isMultiple(of: 4))
+
+//Decimal Numbers
+//Floating point number
+let numberF = 0.1 + 0.2 //Double type
+print(numberF)
+
+let a = 2
+let b = 1.0
+
+let c = Double(a) + b
+print(c)
+
+//CG Floats == Double
+
+//Swift is a type-safe language
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1288}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

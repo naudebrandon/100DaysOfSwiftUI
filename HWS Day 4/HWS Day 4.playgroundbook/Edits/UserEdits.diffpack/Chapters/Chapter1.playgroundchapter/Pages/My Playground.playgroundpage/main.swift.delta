@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//Type annotations
+
+//Inferred
+let surnameinfer = "Lasso"
+var scoreinfer = 0
+
+//explicit
+let surname: String = "Lasso"
+var score: Double = 0
+
+let playerName: String = "Roy"
+let luckyNumber: Int = 13
+let pi: Double = 3.1415
+var isAutenticated: Bool = true
+
+//Array
+var albums: [String] = ["Red", "Fearless"]
+//Dictionary
+var user: [String: String] = ["id": "@twostraws"]
+//Set
+var books: Set&lt;String&gt; = Set([
+    "The Bluest Eye",
+    "Foundation",
+    "Girl, Women Other"
+])
+
+//Empty Array
+var teams: [String] = [String]()
+
+enum UIStyle {
+    case light, dark, system
+}
+
+var style = UIStyle.light
+style = .dark
+
+
+//Checkpoint 2
+print("---------------CHECKPOINT 2-----------------")
+
+let albumse = ["Red", "Fearless", "Dark Side of the Moon", "Water", "Red", "Blue" ]
+
+let individualItems = Set(albumse)
+
+print("\(albumse.count) items in the array")
+print("\(individualItems.count) individual items in the array")
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 912}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//For Loops
+print("----------FOR LOOP-----------")
+
+let platforms = ["iOS", "macOS", "tcOS", "watchOS"]
+
+for os in platforms{
+    print("Swift works great on \(os)")
+}
+
+for i in 1...12{
+    print("-----The \(i) Times table-------")
+    for j in 1...12{
+        print("\(i) X \(j) = \(i * j)")
+    }
+    print()
+}
+
+for i in 1..&lt;5{
+    print("Counting up to 5 exclusive \(i)")
+}
+
+var lyric = "Haters Gonna"
+
+for _ in 1...5{
+    lyric += " hate"
+}
+print()
+print(lyric)
+
+print()
+print("----------WHILE LOOP-----------")
+
+var countdown = 10
+
+while countdown &gt; 0{
+    print("\(countdown)...")
+    countdown -= 1
+}
+print("Blast off!")
+print()
+let id = Int.random(in: 1...200)
+let amount = Double.random(in: 0...6)
+
+var roll = 0
+
+while roll != 20{
+    roll = Int.random(in: 1...20)
+    print("I rolled a \(roll)")
+}
+print("Critical Hit!")
+
+print()
+print("-----BREAK/CONTINUE---------")
+
+let filenames = ["me.jpg", "work.txt", "Sophie.jpg"]
+
+for filename in filenames{
+    if filename.hasSuffix(".jpg") == false{
+        continue
+    }
+    
+    print("Found picture: \(filename)")
+}
+
+let number = 4
+let number2 = 14
+var multiples = [Int]()
+
+for i in 1...100_000{
+    if i.isMultiple(of: number) &amp;&amp; i.isMultiple(of: number2){
+        multiples.append(i)
+        
+        if multiples.count == 10{
+            break
+        }
+    }
+}
+
+print(multiples)
+print()
+
+for i in 1...100{
+    if i.isMultiple(of: 3) &amp;&amp; i.isMultiple(of: 5){
+        print("FizzBuzz")
+    }
+    else if i.isMultiple(of: 5){
+        print("Buzz")
+    }
+    else if i.isMultiple(of: 3){
+        print("Fizz")
+    }
+    else{
+        print(i)
+    }
+}
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 1608}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>

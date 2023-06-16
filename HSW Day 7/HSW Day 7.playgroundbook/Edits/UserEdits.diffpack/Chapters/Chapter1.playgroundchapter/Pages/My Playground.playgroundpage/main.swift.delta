@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import UIKit
+
+print("-------REUSE CODE WITH FUNCTIONS-------")
+
+func showWelcome(){
+print("Welcome to my App")
+print("By default This prints out a conversation")
+print("chart from centimetres to inches")
+}
+
+showWelcome()
+print()
+//-----------------------------------------
+// (number: Int, End: Int) --&gt; Paramaters
+func printTimesTables(number: Int, end: Int){
+    for i in 1...end{
+        print("\(i) X \(number) = \(i * number)")
+    }
+}
+
+printTimesTables(number: 5, end: 20)
+// (number: 5, end: 20) --&gt; Arguments
+
+//Parameter --&gt; Placeholder
+//Aurgument --&gt; Actual Value
+//All values are destroyed with the function finishes
+//----------------------------------------
+
+print()
+print("--------RETURN VALUES FROM FUNCTIONS-------")
+
+let root = sqrt(169)
+print(root)
+
+func rollDice() -&gt; Int {
+    return Int.random(in: 1...6)
+}
+
+let result = rollDice()
+print(rollDice())
+
+func areLettersIdebtical(string1: String, string2: String) -&gt; Bool{
+    return string1.sorted() == string2.sorted()
+}
+print("-------PYTHAGORAS--------------")
+func pythagoras(a: Double, b: Double) -&gt; Double {
+    let input = a * a + b * b
+    let root = sqrt(input)
+    return root
+}
+let c = pythagoras(a: 3, b: 4)
+print(c)
+
+func sayHello(){
+    return
+}
+
+print()
+print("---------RETURN MULTIPLE VALUES----------")
+
+/*
+let user2 = getUser()
+print("Name: \(user2[firstName", default: "?"]) \(user2["lastName", default: "?"])")
+*/
+
+func getUser() -&gt; (firstName: String, lastName: String) {
+    (firstName: "Taylor", lastName: "Swift")
+}
+
+let user = getUser()
+print("Name: \(user.firstName) \(user.lastName)")
+
+let (firstName, lastName) = getUser()
+print("Name: \(firstName) \(lastName)")
+
+print()
+print("----------NAME PARAMETERS------------")
+
+func rollDice2(sides: Int, count: Int) -&gt; Int{
+    var rolls = [Int]()
+    
+    for _ in 1...count {
+        let roll = Int.random(in: 1...sides)
+        rolls.append(roll)
+    }
+    
+    return 5
+    
+}
+
+let roll2 = rollDice2(sides: 6, count: 4)
+
+func isUppercase(_ string: String) -&gt; Bool{
+    string == string.uppercased()
+}
+
+let string = "HELLO WORLD"
+let result2 = isUppercase(string)
+
+func printTimesTable(for number: Int){
+    for i in 1...12{
+        print("\(i) X \(number) is \(i * number)")
+    }
+}
+
+printTimesTable(for: 5)
+</string>
+			<key>ModifiedRange</key>
+			<string>{0, 2251}</string>
+			<key>OriginalContent</key>
+			<string>
+</string>
+			<key>OriginalRange</key>
+			<string>{0, 1}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
